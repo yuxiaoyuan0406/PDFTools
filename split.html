@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>PDF Tools by SMY</title>
 </head>
 <body>
-  <h1 style="text-align:center;">
+  <!-- <h1 style="text-align:center;">
     PDF Split
-  </h1>
+  </h1> -->
 
-  <p style="font-size:20px;text-align:center;">
+  <!-- <p style="font-size:20px;text-align:center;">
     <a href="index.html">返回</a>
-  </p>
+  </p> -->
 
   <p style="font-size:20px;">
   <div class="inputarea">
@@ -27,7 +27,9 @@
 <!--  ></iframe>-->
   <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
-  <script type="module" src="split.js"></script>
+  <script type="module">
+    {%- include_relative PDFTools/split.js -%}
+  </script>
 
   </p>
 </body>
